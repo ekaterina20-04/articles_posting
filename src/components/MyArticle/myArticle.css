@@ -1,0 +1,9 @@
+.delete{
+    display: flex;
+    justify-content: flex-end;
+}
+.delete p{
+    background-color: rgb(233, 51, 51);
+    cursor: pointer;
+    padding: 5px;
+}

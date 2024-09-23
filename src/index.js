@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Login from './components/Login/Login';
+import Registration from './components/Login/Registration';
+import CreateArticle from './components/CreateArticle/CreateArticle';
+import MyArticle from './components/MyArticle/MyArticle';
+import Article from './components/Article/Article';
+
+import './index.css';
+import Items from './components/Items/Items';
+
+const BASE_URL = 'https://vertically-capable-tick.ngrok-free.app';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Items />} />
+        <Route path="/login" element={<Login />} />
+        <Route path='/register' element={<Registration />} />
+        <Route path='/create_article' element={<CreateArticle />} />
+        <Route path='/article/:id' element={<Article />} />
+        <Route path='/my_article' element={<MyArticle/>}/>
+      </Routes>
+    </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,32 @@
+.main_items{
+
+}
+.lents_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 38px;
+    font-weight: 500;
+}
+.all_articles{
+    padding-top: 50px;
+}
+.one_of_article{
+    border: 2px solid var(--light_grey_color);
+    padding: 30px 50px;
+    margin-top: 20px;
+}
+.title_of_article{
+    font-size: 32px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+.title_of_article:hover{
+    color: var(--light_grey_color);
+}
+.author_of_article{
+    display: flex;
+    justify-content: flex-end;
+}

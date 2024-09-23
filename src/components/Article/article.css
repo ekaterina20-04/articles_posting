@@ -1,0 +1,81 @@
+.border_of_article{
+    margin-top: 20px;
+    border: 1px solid var(--light_grey_color);
+    background-color: #e5e8fc;
+}
+.title_article{
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    padding-top: 30px;
+}
+.articles_text{
+    margin: 20px 40px;
+    line-height: 35px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #4e4e4e;
+}
+.articles_text::first-line {
+    padding-left: 20px;
+  }
+.authors_article, .cometns_author{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.comments_main{
+    padding-top: 30px;
+}
+.naming_coms{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.border_comments{
+    margin-top: 30px;
+    border: 1px solid var(--light_grey_color);
+    margin-bottom: 30px;
+    background-color: #e5e8fc;
+}
+.text_of_cms{
+    margin: 30px 30px 10px;
+}
+.create-comm {
+    margin-top: 10px;
+}
+.create-comm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-comm form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-comm label {
+    margin-bottom: 10px;
+  }
+  
+  .create-comm input[type="text"],
+  .create-comm textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-comm button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-comm button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
